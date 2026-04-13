@@ -13,7 +13,7 @@ jobs:
             USER: "tlc"
         runs-on: ubuntu-latest
         steps:
-        - run: echo $UNAME
+        - run: echo $($UNAME)
         - run: echo $USER
     job2:
         name: windows test
