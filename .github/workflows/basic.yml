@@ -10,7 +10,7 @@ jobs:
         name: ubuntu test
         runs-on: ubuntu-latest
         steps:
-            run: 
+            run: |
                 echo $(uname -a)
     job2:
         name: windows test
