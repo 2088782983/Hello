@@ -15,8 +15,7 @@ jobs:
         steps:
         - name: test uname -a
           run: echo $($UNAME)
-        - name: test user
-          run: echo $USER
+        - run: echo $USER
     job2:
         name: windows test
         runs-on: windows-latest
