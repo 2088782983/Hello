@@ -14,8 +14,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: test uname -a
-        run: 
-            echo $($UNAME)
+        run: echo $($UNAME)
         - run: echo $USER
     job2:
         name: windows test
