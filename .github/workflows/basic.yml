@@ -8,11 +8,11 @@ on:
 jobs:
     job1:
         name: ubuntu test
-        runs-on: ubuntu-latest
-        steps:
         env:
             UNAME: uname -a
             USER: "tlc"
+        runs-on: ubuntu-latest
+        steps:
         - run: echo $UNAME
         - run: echo $USER
     job2:
