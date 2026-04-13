@@ -6,7 +6,7 @@ on:
     pull_request:
         branches: [ main ]
 jobs:
-    name: test
+    - name: test
     runs-on: ubuntu-latest
     steps:
         - name: test uname -a
