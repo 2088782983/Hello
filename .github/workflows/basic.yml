@@ -8,12 +8,13 @@ on:
 jobs:
     job1:
         name: ubuntu test
-        env:
-            UNAME: uname -a
-            USER: "tlc"
+        
         runs-on: ubuntu-latest
         steps:
         - name: test uname -a
+          env:
+            UNAME: uname -a
+            USER: "tlc"
           run: echo $($UNAME)
         - run: echo $USER
     job2:
