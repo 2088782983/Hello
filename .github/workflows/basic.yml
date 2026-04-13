@@ -11,7 +11,7 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             run: |
-                echo $(uname -a)
+            echo $(uname -a)
     job2:
         name: windows test
         runs-on: windows-latest
