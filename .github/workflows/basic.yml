@@ -7,12 +7,13 @@ on:
         branches: [ main ]
 jobs:
     job1:
-        name: test
+        name: ubuntu test
         runs-on: ubuntu-latest
         steps:
-            - run: echo $(uname -a)
+            run: 
+                echo $(uname -a)
     job2:
-        name: test
+        name: windows test
         runs-on: windows-latest
         steps:
             - run: python --version
