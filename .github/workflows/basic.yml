@@ -11,9 +11,9 @@ jobs:
         runs-on: ubuntu-latest
         steps:
         - name: test uname -a
-            env:
-                UNAME: "uname -a"
-            run: echo $UNAME
+        env:
+            UNAME: "uname -a"
+        run: echo $UNAME
     job2:
         name: test
         runs-on: windows-latest
